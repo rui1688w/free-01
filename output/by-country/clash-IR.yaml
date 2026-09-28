@@ -26,8 +26,6 @@ proxies:
   network: ws
   ws-opts:
     path: /eyurri
-    headers:
-      Host: afra4.nimbaha9.ir
 proxy-groups:
 - name: PROXIES
   type: select

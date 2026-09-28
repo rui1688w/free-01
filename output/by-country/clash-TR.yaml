@@ -5,8 +5,8 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
-  server: 172.67.192.84
-  port: 2095
+  server: 188.114.98.16
+  port: 2082
   udp: true
   type: vless
   uuid: a22bff60-a40a-4250-bde2-4c660e363b47
@@ -16,14 +16,16 @@ proxies:
     headers:
       Host: index.harmonica02.workers.dev
 - name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
-  server: 93.190.9.52
-  port: 3090
+  server: 188.114.97.6
+  port: 8080
   udp: true
   type: vless
-  uuid: 52e8bce3-b255-486d-beb2-aa1b549c44b1
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless
+  uuid: a22bff60-a40a-4250-bde2-4c660e363b47
+  network: ws
+  ws-opts:
+    path: /j100sy9wn073cxbvir
+    headers:
+      Host: index.harmonica02.workers.dev
 - name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
   server: 78.135.73.47
   port: 443
@@ -48,7 +50,7 @@ proxies:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
     short-id: 9e419c0759b54d6f
   servername: www.apple.com
-  client-fingerprint: random
+  client-fingerprint: chrome
 - name: 🇹🇷 土耳其 (Turkey) 05 - xiaohe
   server: me17.msjia8844.site
   port: 7443
