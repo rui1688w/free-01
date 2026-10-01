@@ -5,15 +5,20 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇨🇦 加拿大 (Canada) 01 (家宽) - xiaohe",
-      "server": "188.114.97.6",
-      "server_port": 2095,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "tag": "🌐 其他地区 (Other) 01 - xiaohe",
+      "server": "cdn.8211992.xyz",
+      "server_port": 443,
+      "uuid": "30610baf-4645-4c7b-9a22-0d0a0a79eab5",
+      "tls": {
+        "enabled": true,
+        "server_name": "mao.mao114514.kdns.fr",
+        "insecure": false
+      },
       "transport": {
         "type": "ws",
-        "path": "/?ed=2560",
+        "path": "/glasspanel/guest000_0_5de14443985f/",
         "headers": {
-          "Host": "zb1zi.s3nx.dyz.hh.vavava.kdns.fr"
+          "Host": "mao.mao114514.kdns.fr"
         }
       }
     },
@@ -22,14 +27,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇦 加拿大 (Canada) 01 (家宽) - xiaohe"
+        "🌐 其他地区 (Other) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇦 加拿大 (Canada) 01 (家宽) - xiaohe"
+        "🌐 其他地区 (Other) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
