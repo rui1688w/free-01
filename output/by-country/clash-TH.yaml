@@ -13,18 +13,21 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇹🇭 泰国 (Thailand) 02 - xiaohe
-  server: 103.86.49.57
-  port: 80
+  server: 175.29.23.179
+  port: 443
   udp: true
   type: vless
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: fzo5i.ir46.90k.hh.ov0.kdns.fr
+  skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /ws
+    path: /glasspanel/guest000_0_5de14443985f/
     headers:
-      Host: aIs.SpEeDtEsT.nEt
+      Host: fzo5i.ir46.90k.hh.ov0.kdns.fr
 - name: 🇹🇭 泰国 (Thailand) 03 - xiaohe
-  server: 104.16.10.9
+  server: 104.16.10.185
   port: 443
   udp: true
   type: vless
