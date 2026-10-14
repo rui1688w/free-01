@@ -5,6 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇶 IQ 01 - xiaohe
+  server: 172.67.141.75
+  port: 443
+  udp: true
+  type: vless
+  uuid: de78c0b1-c5c8-412a-bd92-430d1f2e2642
+  tls: true
+  servername: frosty-pond-7436.shhabbyat914.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /NmrU9ImDG7jA7oFEem
+    headers:
+      Host: frosty-pond-7436.shhabbyat914.workers.dev
+- name: 🇮🇶 IQ 02 - xiaohe
   server: 178.17.57.120
   port: 40443
   udp: true
@@ -17,21 +31,6 @@ proxies:
     short-id: db46e2946fc466fd
   servername: deepl.com
   client-fingerprint: firefox
-- name: 🇮🇶 IQ 02 - xiaohe
-  server: 104.21.70.21
-  port: 443
-  udp: true
-  type: vless
-  uuid: 20e295db-a6af-4006-bfd6-91453f169968
-  tls: true
-  servername: 057.electrocellco-cf-057.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiSFM1N0lLQmx2UU1qRzlnTiIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
-    headers:
-      Host: 057.electrocellco-cf-057.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select

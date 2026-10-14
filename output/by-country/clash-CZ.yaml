@@ -5,34 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - xiaohe
-  server: www.speedtest.net
-  port: 443
-  udp: true
-  type: vless
-  uuid: 3423809a-08e5-4b93-bd76-c6cdcbfd9b52
-  tls: true
-  servername: bn1jywok-7txq9p7e.fbgbjr7g344b78sqlruz7u621njij.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: '/vl/qAuPpP8UsUmtA5NiXmiGs '
-    headers:
-      Host: bn1jywok-7txq9p7e.fbgbjr7g344b78sqlruz7u621njij.workers.dev
-- name: 🇨🇿 捷克 (Czech) 02 - xiaohe
-  server: czekkk.loknietotop.digital
-  port: 443
-  udp: true
-  type: vless
-  uuid: ace33fb8-c593-4b17-8f72-f3359b6e9638
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: WU5baXUzRH9BceiYI8MPBmDMEloTFImx2vvE5uh1yjM
-    short-id: f19e02a2fb573c18
-  servername: czekkk.loknietotop.digital
-  client-fingerprint: firefox
-- name: 🇨🇿 捷克 (Czech) 03 - xiaohe
   server: 195.123.245.241
   port: 443
   udp: true
@@ -45,20 +17,19 @@ proxies:
     short-id: 23d0950d60bc0d5b
   servername: gateway.icloud.com
   client-fingerprint: chrome
-- name: 🇨🇿 捷克 (Czech) 04 - xiaohe
-  server: 188.114.97.1
-  port: 2053
+- name: 🇨🇿 捷克 (Czech) 02 - xiaohe
+  server: 5.39.202.125
+  port: 443
   udp: true
   type: vless
-  uuid: 0b3e7958-e5c4-498f-ab21-b49686f95d2d
+  uuid: ace33fb8-c593-4b17-8f72-f3359b6e9638
+  flow: xtls-rprx-vision
   tls: true
-  servername: bold-term-4edd.mbigspot.workers.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: bold-term-4edd.mbigspot.workers.dev
+  reality-opts:
+    public-key: WU5baXUzRH9BceiYI8MPBmDMEloTFImx2vvE5uh1yjM
+    short-id: f19e02a2fb573c18
+  servername: czekkk.loknietotop.digital
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -66,8 +37,6 @@ proxy-groups:
   - AUTO
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
   - 🇨🇿 捷克 (Czech) 02 - xiaohe
-  - 🇨🇿 捷克 (Czech) 03 - xiaohe
-  - 🇨🇿 捷克 (Czech) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -75,7 +44,5 @@ proxy-groups:
   proxies:
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
   - 🇨🇿 捷克 (Czech) 02 - xiaohe
-  - 🇨🇿 捷克 (Czech) 03 - xiaohe
-  - 🇨🇿 捷克 (Czech) 04 - xiaohe
 rules:
 - MATCH,PROXIES
