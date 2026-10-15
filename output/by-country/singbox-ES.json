@@ -4,16 +4,12 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "shadowsocks",
       "tag": "🇪🇸 西班牙 (Spain) 01 - xiaohe",
-      "server": "185.174.137.172",
-      "server_port": 8446,
-      "password": "e9dc02d400b67c727aca1620",
-      "tls": {
-        "enabled": true,
-        "server_name": "185.174.137.172",
-        "insecure": true
-      }
+      "server": "5.188.181.201",
+      "server_port": 9019,
+      "method": "aes-256-cfb",
+      "password": "GA9KzeEgvfxNrgmM"
     },
     {
       "type": "vless",
@@ -47,7 +43,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -57,20 +53,8 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇪🇸 西班牙 (Spain) 04 - xiaohe",
-      "server": "es2.xiaoliyu.cyou",
-      "server_port": 18333,
-      "password": "8b64b840-a48d-4ac0-b10f-8f7d7081a0f1",
-      "tls": {
-        "enabled": true,
-        "server_name": "es2.xiaoliyu.cyou",
-        "insecure": true
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 05 - xiaohe",
+      "tag": "🇪🇸 西班牙 (Spain) 04 - xiaohe",
       "server": "193.238.154.78",
       "server_port": 443,
       "uuid": "897d47f8-4dd5-42a1-bcd0-bef19caff55a",
@@ -87,6 +71,18 @@
           "public_key": "4eE3K8Eac-ELze-LwRyJolqmhPqgCVqwQM1DKu6i0Ts",
           "short_id": "e93d46ee3735069e"
         }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇪🇸 西班牙 (Spain) 05 - xiaohe",
+      "server": "es2.xiaoliyu.cyou",
+      "server_port": 18333,
+      "password": "8b64b840-a48d-4ac0-b10f-8f7d7081a0f1",
+      "tls": {
+        "enabled": true,
+        "server_name": "es2.xiaoliyu.cyou",
+        "insecure": true
       }
     },
     {

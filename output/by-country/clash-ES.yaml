@@ -5,13 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇸 西班牙 (Spain) 01 - xiaohe
-  server: 185.174.137.172
-  port: 8446
+  server: 5.188.181.201
+  port: 9019
   udp: true
-  type: hysteria2
-  password: e9dc02d400b67c727aca1620
-  sni: 185.174.137.172
-  skip-cert-verify: true
+  type: ss
+  cipher: aes-256-cfb
+  password: GA9KzeEgvfxNrgmM
 - name: 🇪🇸 西班牙 (Spain) 02 - xiaohe
   server: 212.227.235.66
   port: 2053
@@ -36,16 +35,8 @@ proxies:
     public-key: v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE
     short-id: 0dfc23fe80778c00
   servername: www.cloudflare.com
-  client-fingerprint: random
+  client-fingerprint: chrome
 - name: 🇪🇸 西班牙 (Spain) 04 - xiaohe
-  server: es2.xiaoliyu.cyou
-  port: 18333
-  udp: true
-  type: hysteria2
-  password: 8b64b840-a48d-4ac0-b10f-8f7d7081a0f1
-  sni: es2.xiaoliyu.cyou
-  skip-cert-verify: true
-- name: 🇪🇸 西班牙 (Spain) 05 - xiaohe
   server: 193.238.154.78
   port: 443
   udp: true
@@ -58,6 +49,14 @@ proxies:
     short-id: e93d46ee3735069e
   servername: gateway.icloud.com
   client-fingerprint: chrome
+- name: 🇪🇸 西班牙 (Spain) 05 - xiaohe
+  server: es2.xiaoliyu.cyou
+  port: 18333
+  udp: true
+  type: hysteria2
+  password: 8b64b840-a48d-4ac0-b10f-8f7d7081a0f1
+  sni: es2.xiaoliyu.cyou
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
