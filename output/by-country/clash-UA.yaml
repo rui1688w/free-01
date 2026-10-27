@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇺🇦 乌克兰 (Ukraine) 01 - xiaohe
-  server: 104.253.216.227
+  server: staging.lastilhame.monster
   port: 49917
   udp: true
   type: ss
@@ -25,7 +25,7 @@ proxies:
   servername: www.bing.com
   client-fingerprint: chrome
 - name: 🇺🇦 乌克兰 (Ukraine) 03 - xiaohe
-  server: 104.253.216.227
+  server: staging.lastilhame.monster
   port: 443
   udp: true
   type: vless
@@ -36,7 +36,7 @@ proxies:
     public-key: FjcEZNQ8t5E4R04_11T6ghsOutdqwKKrelkuadakoQg
     short-id: 225e930cfd4d
   servername: www.hollywoodreporter.com
-  client-fingerprint: firefox
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
