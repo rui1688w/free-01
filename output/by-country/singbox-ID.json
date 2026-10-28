@@ -4,20 +4,15 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇨🇦 加拿大 (Canada) 01 (家宽) - xiaohe",
-      "server": "sg-transit-3.nebulacloud.win",
-      "server_port": 30330,
-      "uuid": "dfa9f875-3805-49d9-8636-46b6899be24e",
-      "security": "auto",
+      "type": "vless",
+      "tag": "🇮🇩 印尼 (Indonesia) 01 - xiaohe",
+      "server": "in001.zestapp778.com",
+      "server_port": 57353,
+      "uuid": "e9a8144e-5237-488a-afb1-9ca3d8d54c80",
       "tls": {
         "enabled": true,
-        "server_name": "sg-transit-3.nebulacloud.win",
+        "server_name": "in001.zestapp778.com",
         "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ca/getData"
       }
     },
     {
@@ -25,14 +20,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇦 加拿大 (Canada) 01 (家宽) - xiaohe"
+        "🇮🇩 印尼 (Indonesia) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇦 加拿大 (Canada) 01 (家宽) - xiaohe"
+        "🇮🇩 印尼 (Indonesia) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
