@@ -13,14 +13,14 @@ proxies:
   tls: true
   servername: vpn.cintaku.qzz.io
   skip-cert-verify: false
-  client-fingerprint: safari
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /vlessws
     headers:
       Host: vpn.cintaku.qzz.io
 - name: 🇨🇳 CN 02 - xiaohe
-  server: vpn.cintaku.qzz.io
+  server: 8.35.211.242
   port: 443
   udp: true
   type: vless
@@ -31,6 +31,8 @@ proxies:
   network: ws
   ws-opts:
     path: /vlessws
+    headers:
+      Host: vpn.cintaku.qzz.io
 proxy-groups:
 - name: PROXIES
   type: select
