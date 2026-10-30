@@ -16,7 +16,7 @@ proxies:
     public-key: hlY5ce1UsVIgE46y5PlEZhUsSaXUnCtoDLLaGrhInjw
     short-id: 23d0950d60bc0d5b
   servername: gateway.icloud.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇨🇿 捷克 (Czech) 02 - xiaohe
   server: 212.102.38.25
   port: 443
@@ -31,42 +31,18 @@ proxies:
   servername: udemy.com
   client-fingerprint: firefox
 - name: 🇨🇿 捷克 (Czech) 03 - xiaohe
-  server: 31.77.13.22
-  port: 2063
-  udp: true
-  type: vless
-  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
-  servername: rusbid.de
-  client-fingerprint: firefox
-- name: 🇨🇿 捷克 (Czech) 04 - xiaohe
-  server: 46.8.113.64
+  server: server.slavkiti.monster
   port: 443
   udp: true
   type: vless
-  uuid: 55ad002b-6cdf-4d76-81bb-91f3f605afc5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: _SukRXeT9BnvrE3eQTrw8vwsrhu7w3hNTMTEK2xzHEw
-  servername: www.zabbix.com
-  client-fingerprint: firefox
-- name: 🇨🇿 捷克 (Czech) 05 - xiaohe
-  server: 193.124.17.190
-  port: 443
-  udp: true
-  type: vless
-  uuid: b60cab55-e7a1-413d-a297-ddd7bad3fb62
+  uuid: ed042cf7-efe0-49bd-848b-8d7e655111ff
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
     public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
-    short-id: bbcab8fa80a3
-  servername: www.microsoft.com
-  client-fingerprint: firefox
+    short-id: 1036b2383b72
+  servername: www.mozilla.org
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -75,8 +51,6 @@ proxy-groups:
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
   - 🇨🇿 捷克 (Czech) 02 - xiaohe
   - 🇨🇿 捷克 (Czech) 03 - xiaohe
-  - 🇨🇿 捷克 (Czech) 04 - xiaohe
-  - 🇨🇿 捷克 (Czech) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -85,7 +59,5 @@ proxy-groups:
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
   - 🇨🇿 捷克 (Czech) 02 - xiaohe
   - 🇨🇿 捷克 (Czech) 03 - xiaohe
-  - 🇨🇿 捷克 (Czech) 04 - xiaohe
-  - 🇨🇿 捷克 (Czech) 05 - xiaohe
 rules:
 - MATCH,PROXIES
